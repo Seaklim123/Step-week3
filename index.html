@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Practice Webpage</h1>
+        <p>HTML + CSS Practice(Form + Table Advanced)</p>
+    </div>
+
+    <div class="image">
+        <h2>Image Section</h2>
+        <img src="images/angkor.jpg" alt="AngKor picture" width="200" height="100">
+    </div>
+
+    <div class="table-section">
+        <h3>Advanced Table</h3>
+        <table class="table">
+            <tr class="table-header">
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <th>Cs</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>90</td>
+                <td>95</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>80</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-one">
+        <div class="form-section-one">
+            <h4>Form 1: Basic Info</h4>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <span>*</span><br>
+                <input class="form-control-one" type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email</label>
+                <span>*</span><br>
+                <input class="form-control-one" type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password</label>
+                <span>*</span><br>
+                <input class="form-control-one" type="password" id="password" name="password" required><br><br>
+
+                <label for="file">Upload File</label><br>
+                <input class="form-control-one" type="file" id="file" name="file"><br><br>
+
+                <input class="btn" type="submit" value="Submit">
+                <input class="btn" type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+
+    <div class="form-two">
+        <div class="form-section-two">
+            <h4>Form 2: Survey Form</h4>
+            <form class="survey-form" action="#" method="post">
+                <div>
+                    <label for="selection">Choose Course</label>
+                    <span>*</span>
+                </div>
+                <div>
+                    <select class="form-control-two" id="selection" name="selection" required>
+                        <option value="">--Select a course--</option>
+                        <option value="course1">Course 1</option>
+                        <option value="course2">Course 2</option>
+                        <option value="course3">Course 3</option>
+                    </select>
+                </div>
+
+                <label for="gender">Gender</label><br>
+                <div class="form-group-inline checkbox-group">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div class="form-group-inline checkbox-group">
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <label>Skills</label>
+                <div class="checkbox-group">
+                    <div class="form-group-inline">
+                        <input type="checkbox" id="html">
+                        <label for="html">HTML</label>
+                    </div>
+
+                    <div class="form-group-inline">
+                        <input type="checkbox" id="css">
+                        <label for="css">CSS</label>
+                    </div>
+
+                    <div class="form-group-inline">
+                        <input type="checkbox" id="js">
+                        <label for="js">JavaScript</label>
+                    </div>
+                </div>
+
+                <label for="phone">Phone</label>
+                <span>*</span><br>
+                <input class="form-control-two" type="tel" id="phone" name="phone"><br><br>
+
+                <label for="message">Message</label><br>
+                <textarea class="form-control-two" id="message" name="message" rows="4"></textarea><br><br>
+
+                <input class="btn" type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
