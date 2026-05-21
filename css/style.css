@@ -1,115 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
 }
-.container {
-    text-align: center;
+
+.hero{
     background-color: #44ACFF;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
     color: white;
+    padding: 40px 20px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
 }
-.image {
-    margin-top: 20px;
+
+.card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
-.table-section {
-    margin-top: 20px;
-    background-color: white;
-    padding: 20px;
+
+
+.image-preview {
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.table {
+
+.image-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.image-oval {
+    width: 350px;
+    height: 200px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+.table{
     width: 100%;
     border-collapse: collapse;
-    text-align: center;
-    border: 1px solid #ddd;
- 
+    margin-top: 20px;
 }
 
-.table td{
+.table th, .table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-
 }
 
-.table th{
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+.table th {
     background-color: #44ACFF;
     color: white;
 }
 
-.form-one {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.form-container {
+    /* width: 50%;
+    max-width: 600px; */
+    padding: 20px 500px;
 }
 
-.form-section-one {
-    width: 500px;
-    margin: 40px auto;
-    margin-top: 20px;
-    background-color: white;
-    padding: 30px;
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px; 
     
 }
-
-.form-control-one{
-    width:100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    
+.form-control {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
-.form-two {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.form-control:focus {
+    border-color: #44ACFF; 
+    outline: none; 
 }
 
-.form-control-two {
-    display: block;      
-    width: 100%;         
-    padding: 8px;
-    box-sizing: border-box;
-    border-radius: 10px;
-  
+.required {
+    color: red;  
 }
 
 .form-group-inline {
     display: flex;       
-    align-items: center; 
     gap: 10px;           
 }
 
-.form-section-two {
-    width: 500px;
-    margin: 40px auto;
+.inline-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inline-item-parents {
+    display: flex;
+    gap: 20px;
+}
+
+.button-group {
     margin-top: 20px;
-    background-color: white;
-    padding: 30px;
-}
-
-.form-section h5 {
-    
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-.form-section label {
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
-}
-span {
-    color: red;
 }
 
 .btn {
@@ -120,21 +124,5 @@ span {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#section {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.checkbox-group{
-    display: flex;
-    gap: 20px;
-}
-
-.form-group-inline{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    margin-right: 10px;
 }
